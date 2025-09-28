@@ -6,6 +6,7 @@ import '../user/user.dart';
 import '../views/settings_screen.dart';
 import '../views/reservations_screen.dart';
 import '../views/my_reservations_screen.dart';
+import '../views/help_screen.dart';
 import '../auth/login.dart';
 // primer commit
 class HomeScreen extends StatefulWidget {
@@ -48,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
       const MyReservationsScreen(), // 4: Mis Reservas
       _buildPlaceholderPage(
           'Notificaciones', Icons.notifications), // 5: Notificaciones
-      _buildPlaceholderPage('Ayuda', Icons.help), // 6: Ayuda
+      const HelpScreen(), // 6: Ayuda
       _buildPlaceholderPage('Acerca de', Icons.info), // 7: Acerca de
     ];
   }
